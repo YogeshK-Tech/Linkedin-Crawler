@@ -1,0 +1,24 @@
+{
+    "title": "Scrape LinkedIn profiles based on keywords",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "keywords": {
+            "title": "Search Keywords",
+            "type": "array",
+            "description": "List of keywords for building the search query.",
+            "items": {
+                "type": "string"
+            },
+            "editor": "stringList"
+        },
+        "pages": {
+            "title": "Number of Pages",
+            "type": "integer",
+            "description": "The number of pages to scrape.",
+            "editor": "number",
+            "default": 1
+        }
+    },
+    "required": ["keywords", "pages"]
+}
